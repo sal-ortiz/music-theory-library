@@ -35,11 +35,7 @@ console.log('D5:', Note.transpose('C#4', 13));    // D5
 console.log('D#5:', Note.transpose('C#4', 14));   // D#5
 console.log('E5:', Note.transpose('C#4', 15));    // E5
 
-
-
-
 console.log("");
-
 
 console.log('B3:', Note.transpose('C#4', -2));    // B3
 console.log('A#3:', Note.transpose('C#4', -3));   // A#3
@@ -58,4 +54,3 @@ console.log('B2:', Note.transpose('C#4', -14));   // B2
 console.log('A#2:', Note.transpose('C#4', -15));  // A#2
 
 console.log("");
-
