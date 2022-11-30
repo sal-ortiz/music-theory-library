@@ -1,12 +1,5 @@
 
-
 const Base = require('../lib/base');
-
-
-
-
-
-
 
 
 describe('Base', () => {
