@@ -134,3 +134,21 @@ global.TRANSPOSE_DOWN_EXPECTATIONS = [
   { input: { note: 'C2',  semitones: -13 }, output: 'B0'  },
 ];
 
+global.COUNT_SEMITONES_EXPECTATIONS = [
+  { input: { low: 'C0', high: 'C0' }, output: 0 },
+  { input: { low: 'C#0', high: 'D0' }, output: 1 },
+  { input: { low: 'D0', high: 'E0' }, output: 2 },
+  { input: { low: 'D#0', high: 'F#0' }, output: 3 },
+  { input: { low: 'E0', high: 'G#0' }, output: 4 },
+  { input: { low: 'F0', high: 'A#0' }, output: 5 },
+  { input: { low: 'F#0', high: 'C1' }, output: 6 },
+  { input: { low: 'G0', high: 'D1' }, output: 7 },
+  { input: { low: 'G#0', high: 'E1' }, output: 8 },
+  { input: { low: 'A0', high: 'F#1' }, output: 9 },
+  { input: { low: 'A#0', high: 'G#1' }, output: 10 },
+  { input: { low: 'B0', high: 'A#1' }, output: 11 },
+  { input: { low: 'C1', high: 'C2' }, output: 12 },
+  { input: { low: 'C#1', high: 'D2' }, output: 13 },
+  { input: { low: 'D1', high: 'E2' }, output: 14 },
+  { input: { low: 'D#1', high: 'F#2' }, output: 15 },
+];

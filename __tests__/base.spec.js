@@ -71,4 +71,19 @@ describe('Base', () => {
 
   });
 
+  describe('the countSemitones(...) static function', () => {
+
+    test('it returns the number of semitones between the low and high notes', () => {
+
+      COUNT_SEMITONES_EXPECTATIONS.forEach((entry) => {
+        let input = entry.input;
+        let result = Base.countSemitones(input.low, input.high);
+
+        expect(result).toEqual(entry.output);
+      });
+
+    });
+
+  });
+
 });
