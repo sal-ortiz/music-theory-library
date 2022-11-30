@@ -69,7 +69,7 @@ global.TRANSPOSE_UP_EXPECTATIONS = [
   { input: { note: 'E2',  semitones: 4 }, output: 'G#2'  },
   { input: { note: 'E#2', semitones: 6 }, output: 'B2' },
 
-  //{ input: { note: 'Fb3', semitones: 3 }, output: 'G3' },
+  { input: { note: 'Fb3', semitones: 3 }, output: 'G3' },
   { input: { note: 'F3',  semitones: 5 }, output: 'A#3'  },
   { input: { note: 'F#3', semitones: 7 }, output: 'C#4' },
 
@@ -111,7 +111,7 @@ global.TRANSPOSE_DOWN_EXPECTATIONS = [
   { input: { note: 'G6',  semitones: -6 }, output: 'C#6'  },
   { input: { note: 'G#6', semitones: -8 }, output: 'C6' },
 
-  //{ input: { note: 'Fb5', semitones: -5 }, output: 'B4' },
+  { input: { note: 'Fb5', semitones: -5 }, output: 'B4' },
   { input: { note: 'F5',  semitones: -7 }, output: 'A#4'  },
   { input: { note: 'F#5', semitones: -9 }, output: 'A4' },
 
