@@ -12,7 +12,7 @@ const Base = require('../lib/base');
 describe('Base', () => {
   // test stuff
 
-  describe('parseNote(...) function', () => {
+  describe('the parseNote(...) static function', () => {
 
     test('it parses the given note string', () => {
 
@@ -29,7 +29,7 @@ describe('Base', () => {
 
   });
 
-  describe('parseInterval(...) function', () => {
+  describe('the parseInterval(...) static function', () => {
 
     test('it parses the given interval string', () => {
 
@@ -45,7 +45,7 @@ describe('Base', () => {
 
   });
 
-  describe('transpose(...) function', () => {
+  describe('the transpose(...) static function', () => {
 
     test('it transposes the given note upward by the given number of steps', () => {
 
@@ -71,11 +71,11 @@ describe('Base', () => {
 
   });
 
-  describe('getTrebleFromSemitones(...) function', () => {
+  describe('the getTrebleFromSemitones(...) static function', () => {
 
     test('it returns the upper part of the given interval', () => {
 
-      global.TREBLE_NOTE_EXPECTATIONS.forEach((entry) => {
+      TREBLE_NOTE_EXPECTATIONS.forEach((entry) => {
         let input = entry.input;
         let result = Base.transpose(input.note, input.semitones);
 
