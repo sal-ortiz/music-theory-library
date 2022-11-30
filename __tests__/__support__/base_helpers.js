@@ -131,3 +131,30 @@ global.TRANSPOSE_DOWN_EXPECTATIONS = [
   { input: { note: 'B1',  semitones: -11 }, output: 'C1'  },
   { input: { note: 'C2',  semitones: -13 }, output: 'B0'  },
 ];
+
+global.TREBLE_NOTE_EXPECTATIONS = [
+  { input: { note: 'C0',  semitones: 0 }, output: 'C0' },
+  { input: { note: 'C#0', semitones: 1 }, output: 'D0' },
+  { input: { note: 'D0',  semitones: 2 },  output: 'E0' },
+  { input: { note: 'D#0',  semitones: 3 },  output: 'F#0' },
+
+  { input: { note: 'E0',  semitones: 4 }, output: 'G#0' },
+  { input: { note: 'F0', semitones: 5 }, output: 'A#0' },
+  { input: { note: 'G0',  semitones: 6 },  output: 'C#1' },
+  { input: { note: 'G#0',  semitones: 7 },  output: 'D#1' },
+
+  { input: { note: 'A0',  semitones: 8 }, output: 'F1' },
+  { input: { note: 'A#0', semitones: 9 }, output: 'G1' },
+  { input: { note: 'B0',  semitones: 10 },  output: 'A1' },
+  { input: { note: 'C1',  semitones: 11 },  output: 'B1' },
+
+  { input: { note: 'C#1',  semitones: 8 }, output: 'A1' },
+  { input: { note: 'D1', semitones: 9 }, output: 'B1' },
+  { input: { note: 'D#1',  semitones: 10 },  output: 'C#2' },
+  { input: { note: 'E1',  semitones: 11 },  output: 'D#2' },
+
+  { input: { note: 'F1',  semitones: 12 }, output: 'F2' },
+  { input: { note: 'F#1', semitones: 13 }, output: 'G2' },
+  { input: { note: 'G1',  semitones: 14 },  output: 'A2' },
+  { input: { note: 'G#1',  semitones: 15 },  output: 'B2' },
+];
