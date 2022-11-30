@@ -71,19 +71,4 @@ describe('Base', () => {
 
   });
 
-  describe('the getTrebleFromSemitones(...) static function', () => {
-
-    test('it returns the upper part of the given interval', () => {
-
-      TREBLE_NOTE_EXPECTATIONS.forEach((entry) => {
-        let input = entry.input;
-        let result = Base.transpose(input.note, input.semitones);
-
-        expect(result).toEqual(entry.output);
-      });
-
-    });
-
-  });
-
 });
