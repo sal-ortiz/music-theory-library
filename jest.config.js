@@ -134,7 +134,8 @@ module.exports = {
   // The paths to modules that run some code to configure or set up the testing environment before each test
   setupFiles: [
     './__tests__/__support__/note_helpers.js',
-    './__tests__/__support__/interval_helpers.js'
+    './__tests__/__support__/interval_helpers.js',
+    './__tests__/__support__/chord_helpers.js'
   ],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
