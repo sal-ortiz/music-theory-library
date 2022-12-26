@@ -3,7 +3,7 @@
   "version": "0.0.1-alpha",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "author": "Salvador Ortiz",
   "license": "MIT",
