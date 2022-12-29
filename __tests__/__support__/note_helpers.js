@@ -1,4 +1,41 @@
 
+
+global.NOTE_SETTER_EXPECTATIONS = [
+  { note: 'C0', name: 'D', accidental: 'b', octave: 1 },
+  { note: 'D1', name: 'E', accidental: '#', octave: 2 }
+];
+
+global.NOTE_TRANSPOSE_UP_EXPECTATIONS = [
+  { input: { note: 'C0',  semitones: 1  }, output: 'C#0' },
+  { input: { note: 'D0',  semitones: 2  }, output: 'E0'  },
+  { input: { note: 'F0',  semitones: 3  }, output: 'G#0' },
+  { input: { note: 'A0',  semitones: 4  }, output: 'C#1' },
+  { input: { note: 'D1',  semitones: 5  }, output: 'G1'  },
+  { input: { note: 'A1',  semitones: 6  }, output: 'D#2' },
+  { input: { note: 'E2',  semitones: 7  }, output: 'B2'  },
+  { input: { note: 'C3',  semitones: 8  }, output: 'G#3' },
+  { input: { note: 'A3',  semitones: 9  }, output: 'F#4' },
+  { input: { note: 'G4',  semitones: 10 }, output: 'F5'  },
+  { input: { note: 'G5',  semitones: 11 }, output: 'F#6' },
+  { input: { note: 'G6',  semitones: 12 }, output:  'G7' },
+];
+
+global.NOTE_TRANSPOSE_DOWN_EXPECTATIONS = [
+  { input: { note: 'C8', semitones: 1  }, output: 'B7'  },
+  { input: { note: 'A8', semitones: 2  }, output: 'G8'  },
+  { input: { note: 'F8', semitones: 3  }, output: 'D8'  },
+  { input: { note: 'C8', semitones: 4  }, output: 'G#7' },
+  { input: { note: 'G7', semitones: 5  }, output: 'D7'  },
+  { input: { note: 'C7', semitones: 6  }, output: 'F#6' },
+  { input: { note: 'F6', semitones: 7  }, output: 'A#5' },
+  { input: { note: 'A5', semitones: 8  }, output: 'C#5' },
+  { input: { note: 'C5', semitones: 9  }, output: 'D#4' },
+  { input: { note: 'D4', semitones: 10 }, output: 'E3'  },
+  { input: { note: 'D3', semitones: 11 }, output: 'D#2' },
+  { input: { note: 'B2', semitones: 11 }, output: 'C2'  },
+  { input: { note: 'B2', semitones: 12 }, output: 'B1'  },
+];
+
 global.NOTE_PARSE_EXPECTATIONS = [
   { input: 'Cb0', output: { name: 'C', accidental: 'b', octave: 0 } },
   { input: 'C0',  output: { name: 'C', accidental: '',  octave: 0 } },
