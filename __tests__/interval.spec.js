@@ -88,12 +88,26 @@ describe('Interval', () => {
 
   });
 
-  describe('the fromSemitones(...) static function', () => {
+  describe('the intervalFromSemitones(...) static function', () => {
 
     test('it returns the interval given the number of semitones', () => {
 
       INTERVAL_FROM_SEMITONES_EXPECTATIONS.forEach((entry) => {
-        let result = Interval.fromSemitones(entry.input);
+        let result = Interval.intervalFromSemitones(entry.input);
+
+        expect(result).toEqual(entry.output);
+      });
+
+    });
+
+  });
+
+  describe('the SemitonesFromInterval(...) static function', () => {
+
+    test('it returns the requested interval given the semitones', () => {
+
+      INTERVAL_FROM_INTERVAL_EXPECTATIONS.forEach((entry) => {
+        let result = Interval.semitonesFromInterval(entry.input);
 
         expect(result).toEqual(entry.output);
       });

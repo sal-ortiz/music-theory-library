@@ -107,7 +107,39 @@ global.INTERVAL_FROM_ROOT_EXPECTATIONS = [
   { input: { interval: 'P15', note: 'C2' }, output: 'C4' },
 ];
 
+global.INTERVAL_FROM_INTERVAL_EXPECTATIONS = [
+  { input: 'P0', output: 0  },
+  { input: 'm2', output: 1  },
+  { input: 'M2', output: 2  },
+  { input: 'm3', output: 3  },
+  { input: 'M3', output: 4  },
+  { input: 'P4', output: 5  },
+  { input: '+4', output: 6  },
+  { input: 'P5', output: 7  },
+  { input: 'm6', output: 8  },
+  { input: 'M6', output: 9  },
+  { input: 'm7', output: 10 },
+  { input: 'M7', output: 11 },
 
+  { input: 'P8', output: 12 },
+  { input: 'm9', output: 13 },
+  { input: 'M9', output: 14 },
+  { input: 'm10', output: 15 },
+  { input: 'M10', output: 16 },
+  { input: 'P11', output: 17 },
+  { input: '+11', output: 18 },
+  { input: 'P12', output: 19 },
+  { input: 'm13', output: 20 },
+  { input: 'M13', output: 21 },
+  { input: 'm14', output: 22 },
+  { input: 'M14', output: 23 },
+
+  { input: 'P15', output: 24 },
+
+
+
+
+];
 
 global.INTERVAL_FROM_SEMITONES_EXPECTATIONS = [
   { input: 0,  output: 'P0' },
