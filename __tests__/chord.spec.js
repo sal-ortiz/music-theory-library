@@ -50,7 +50,6 @@ describe('Chord', () => {
             let instance = new Chord(entry.input.name);
             let result = instance.fromRoot(entry.input.root);
 
-
             expect(result).toEqual(entry.output);
           });
 
