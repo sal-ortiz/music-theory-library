@@ -1,5 +1,6 @@
-# dependencies
+# project
 node_modules
+coverage
 
 # editor artifacts.
 *.sw*
