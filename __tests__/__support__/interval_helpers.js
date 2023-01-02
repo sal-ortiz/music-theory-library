@@ -135,10 +135,6 @@ global.INTERVAL_FROM_INTERVAL_EXPECTATIONS = [
   { input: 'M14', output: 23 },
 
   { input: 'P15', output: 24 },
-
-
-
-
 ];
 
 global.INTERVAL_FROM_SEMITONES_EXPECTATIONS = [

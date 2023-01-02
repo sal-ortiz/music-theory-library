@@ -1,13 +1,24 @@
 
 
 global.CHORD_SETTER_EXPECTATIONS = [
+  { input: '5',   output: { type: 'fifth', intervals: ['P5'] } },
   { input: 'maj', output: { type: 'major', intervals: ['M3', 'm3'] } },
   { input: 'min', output: { type: 'minor', intervals: ['m3', 'M3'] } },
+  { input: 'dim', output: { type: 'diminished', intervals: ['m3', 'm3'] } },
+  { input: 'aug', output: { type: 'augmented', intervals: ['M3', 'M3'] } },
+
+//  { input: 'maj6', output: { type: 'major 6th', intervals: ['M3', 'm3', 'M2'] } },
+
+
 
 ];
 
 global.CHORD_FROM_ROOT_EXPECTATIONS = [
+  { input: { name: '5', root: 'C0'}, output: ['C0', 'G0'] },
   { input: { name: 'maj', root: 'C0'}, output: ['C0', 'E0', 'G0'] },
+  { input: { name: 'min', root: 'C0'}, output: ['C0', 'D#0', 'G0'] },
+  { input: { name: 'dim', root: 'C0'}, output: ['C0', 'D#0', 'F#0'] },
+  { input: { name: 'aug', root: 'C0'}, output: ['C0', 'E0', 'G#0'] },
 
 ];
 
