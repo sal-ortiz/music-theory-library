@@ -10,5 +10,6 @@ module.exports = {
   Chord: require(Path.join(libPath, 'chord.js')),
   Note: require(Path.join(libPath, 'note.js')),
   Interval: require(Path.join(libPath, 'interval.js')),
+  Scale: require(Path.join(libPath, 'scale.js')),
   //Helpers: require(Path.join(libPath, 'helpers.js')),
 };
